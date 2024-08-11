@@ -1,0 +1,33 @@
+.item{
+    position: relative;
+    margin: 0;
+    padding: 0;
+}
+.image {
+    position: relative;
+}
+.image img{
+    border-radius: 12px;
+}
+.description {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    background: linear-gradient(rgba(143, 9, 9, 0) 0%, rgb(82, 22, 22) 100%);
+}
+.inner-description{
+    padding: 30px;
+}
+.inner-description :is(span, h2){
+    color: azure;
+}
+.description h2{
+    margin: 0;
+    padding: 12px 0;
+}
+.items{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-column: 5;
+    grid-gap: 2rem;
+}
